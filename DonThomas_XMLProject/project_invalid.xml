@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<timeTable 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="project.xsd">
+	<!--a2 - A missing REQUIRED attribute- name attirbute is missing in studentName-->
+	<studentName ></studentName>
+	<!--b1 - An invalid student ID number - student should is integer-->
+	<studentId>aa900001</studentId>
+	<!--a3 - An element that is not defined in the schema- email elemnt undefined-->
+	<email>don@fanshaweonline.ca</email>
+	<program>Computer Science</program>
+	<school schoolName="Fanshawe College"/>
+	<term>W2021</term>
+	<week>
+		<day1>
+			<!--a4 -An invalid number of Day fields- Saturday is invalid -->
+			<dayName>Saturday</dayName>
+			<hour>
+				<startTime>2000</startTime>
+				<!--b4 - An invalid course code - course code should be 4 letters and 4 digits-->
+				<course>IO-112</course>
+				<!--a1 - A missing REQUIRED element - room element is commented -->
+				<!--<room>R1122</room>-->
+			</hour>
+			<hour>
+				<!--b3 - An invalid start time for an Hour field that isn’t a multiple of 100- 000 invalid-->
+				<startTime>000</startTime>
+				<course>INFO-1234</course>
+				<room>R0123</room>
+			</hour>
+			<hour>
+				<startTime>1500</startTime>
+				<course>INFO-2233</course>
+				<room>R0124</room>
+			</hour>
+		</day1>
+		<day2>
+			<dayName>Tuesday</dayName>
+			<!--b2 - Duplicate day fields - Tuesday has duplicate value-->
+			<dayName>Tuesday</dayName>
+			<hour>
+				<startTime>800</startTime>
+				<course>INFO-1122</course>
+				<room>R0122</room>
+			</hour>
+			<hour>
+				<startTime>1000</startTime>
+				<course>INFO-1234</course>
+				<room>R0134</room>
+			</hour>
+			<hour>
+				<startTime>1600</startTime>
+				<course>INFO-2233</course>
+				<room>R0024</room>
+			</hour>
+		</day2>
+		<day3>
+			<dayName>Wedesday</dayName>
+			<hour>
+				<startTime>1100</startTime>
+				<course>INFO-1122</course>
+				<room>R0144</room>
+			</hour>
+			<hour>
+				<startTime>1400</startTime>
+				<course>INFO-2233</course>
+				<room>R0155</room>
+			</hour>
+			<hour>
+				<startTime>1800</startTime>
+				<course>INFO-1234</course>
+				<room>R003</room>
+			</hour>
+		</day3>
+		<day4>
+			<dayName>Thursday</dayName>
+			<hour>
+				<startTime>1300</startTime>
+				<course>INFO-2233</course>
+				<room>R0133</room>
+			</hour>
+			<hour>
+				<startTime>1400</startTime>
+				<course>INFO-1122</course>
+				<room>R0043</room>
+			</hour>
+			<hour>
+				<startTime>1500</startTime>
+				<course>INFO-1234</course>
+				<room>R0111</room>
+			</hour>
+		</day4>
+		<day5>
+			<dayName>Friday</dayName>
+			<hour>
+				<startTime>1200</startTime>
+				<course>INFO-2233</course>
+				<room>R0111</room>
+			</hour>
+			<hour>
+				<startTime>1300</startTime>
+				<course>INFO-2222</course>
+				<room>R0051</room>
+			</hour>
+			<hour>
+				<startTime>1400</startTime>
+				<course>INFO-2233</course>
+				<room>R011</room>
+			</hour>
+			<hour>
+				<startTime>2000</startTime>
+				<course>INFO-3333</course>
+				<room>R0166</room>
+			</hour>
+		</day5>
+	</week>
+
+</timeTable>

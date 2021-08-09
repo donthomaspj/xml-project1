@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="timeTable">
+		<xs:complexType>
+			<xs:all>
+
+				<!--Student name-->
+				<xs:element name="studentName" maxOccurs="1">
+					<xs:complexType>
+						<xs:attribute name="name"/>
+					</xs:complexType>
+				</xs:element>
+
+				<!--Student id-->
+				<xs:element name="studentId" type="xs.integer"  maxOccurs="1"/>
+
+				<!--Program-->
+				<xs:element name="program" minOccurs="0"  maxOccurs="1" />
+
+				<!--school name-->
+				<xs:element name="school" maxOccurs="1">
+					<xs:complexType>
+						<xs:attribute name="schoolName"/>
+					</xs:complexType>
+				</xs:element>
+
+				<!--Course term-->
+				<xs:element name="term" maxOccurs="1"/>
+
+				<!--Week days-->
+				<xs:element name="week">
+					<xs:complexType>
+						<xs:all>
+
+							<!--monday-->
+							<xs:element name="day1">
+								<xs:complexType>
+									<xs:all>
+										<!--week name-->
+										<xs:element name="dayName">
+											<xs:simpleType>
+												<xs:restriction base="xs:ID">
+													<xs:pattern value="Monday|Tuesday|Wedesday|Thursday|Friday"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<!--hours-->
+										<xs:element name="hour">
+											<xs:complexType>
+												<xs:all>
+
+													<!--starttime-->
+													<xs:element name="startTime">
+														<xs:simpleType>
+															<xs:restriction base="xs:integer">
+																<xs:pattern value="800|900|1000|1100|1200|1300|1400|1500|1600|1700|1800|1900|2000" />
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+
+													<!--course-->
+													<xs:element name="course">
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:pattern value="[A-Z]{4}-[0-9]{4}"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+
+													<!--room-->
+													<xs:element name="room"/>
+
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+
+									</xs:all>
+								</xs:complexType>
+
+							</xs:element>
+
+							<!--tuesday-->
+							<xs:element name="day2">
+								<xs:complexType>
+									<xs:all>
+										<!--week name-->
+										<xs:element name="dayName">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:pattern value="Monday|Tuesday|Wedesday|Thursday|Friday"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<!--hours-->
+										<xs:element name="hour">
+											<xs:complexType>
+												<xs:all>
+
+													<!--starttime-->
+													<xs:element name="startTime">
+														<xs:simpleType>
+															<xs:restriction base="xs:integer">
+																<xs:pattern value="800|900|1000|1100|1200|1300|1400|1500|1600|1700|1800|1900|2000" />
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+
+													<!--course-->
+													<xs:element name="course">
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:pattern value="[A-Z]{4}-[0-9]{4}"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+
+													<!--room-->
+													<xs:element name="room"/>
+
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+
+									</xs:all>
+								</xs:complexType>
+
+							</xs:element>
+
+							<!--wednesday-->
+							<xs:element name="day3">
+								<xs:complexType>
+									<xs:all>
+										<!--week name-->
+										<xs:element name="dayName">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:pattern value="Monday|Tuesday|Wedesday|Thursday|Friday"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<!--hours-->
+										<xs:element name="hour">
+											<xs:complexType>
+												<xs:all>
+
+													<!--starttime-->
+													<xs:element name="startTime">
+														<xs:simpleType>
+															<xs:restriction base="xs:integer">
+																<xs:pattern value="800|900|1000|1100|1200|1300|1400|1500|1600|1700|1800|1900|2000" />
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+
+													<!--course-->
+													<xs:element name="course">
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:pattern value="[A-Z]{4}-[0-9]{4}"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+
+													<!--room-->
+													<xs:element name="room"/>
+
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+
+									</xs:all>
+								</xs:complexType>
+
+							</xs:element>
+
+							<!--thursday-->
+							<xs:element name="day4">
+								<xs:complexType>
+									<xs:all>
+										<!--week name-->
+										<xs:element name="dayName">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:pattern value="Monday|Tuesday|Wedesday|Thursday|Friday"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<!--hours-->
+										<xs:element name="hour">
+											<xs:complexType>
+												<xs:all>
+
+													<!--starttime-->
+													<xs:element name="startTime">
+														<xs:simpleType>
+															<xs:restriction base="xs:integer">
+																<xs:pattern value="800|900|1000|1100|1200|1300|1400|1500|1600|1700|1800|1900|2000" />
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+
+													<!--course-->
+													<xs:element name="course">
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:pattern value="[A-Z]{4}-[0-9]{4}"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+
+													<!--room-->
+													<xs:element name="room"/>
+
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+
+									</xs:all>
+								</xs:complexType>
+
+							</xs:element>
+
+
+							<!--friday-->
+							<xs:element name="day5">
+								<xs:complexType>
+									<xs:all>
+										<!--week name-->
+										<xs:element name="dayName">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:pattern value="Monday|Tuesday|Wedesday|Thursday|Friday"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<!--hours-->
+										<xs:element name="hour">
+											<xs:complexType>
+												<xs:all>
+
+													<!--starttime-->
+													<xs:element name="startTime">
+														<xs:simpleType>
+															<xs:restriction base="xs:integer">
+																<xs:pattern value="800|900|1000|1100|1200|1300|1400|1500|1600|1700|1800|1900|2000" />
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+
+													<!--course-->
+													<xs:element name="course">
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:pattern value="[A-Z]{4}-[0-9]{4}"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+
+													<!--room-->
+													<xs:element name="room"/>
+
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+
+									</xs:all>
+								</xs:complexType>
+
+							</xs:element>
+
+						</xs:all>
+					</xs:complexType>
+				</xs:element>
+				
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	
+</xs:schema>
